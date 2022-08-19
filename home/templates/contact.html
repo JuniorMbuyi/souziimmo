@@ -1,0 +1,349 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html data-style-switcher-options="{'changeLogo': false, 'borderRadius': 0, 'colorPrimary': '#013160', 'colorSecondary': '#e36159', 'colorTertiary': '#2baab1', 'colorQuaternary': '#383f48', 'borderRadius': 0}">
+	
+<head>
+		
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Souzy agence</title>	
+
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Porto - Multipurpose Website Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/fontawesome-free/css/all.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/animate/animate.compat.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/simple-line-icons/css/simple-line-icons.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="{% static 'vendor/magnific-popup/magnific-popup.min.css' %}">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="{% static 'css/theme.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-elements.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-blog.css' %}">
+		<link rel="stylesheet" href="{% static 'css/theme-shop.css' %}">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="{% static 'css/demos/demo-finance.css' %}">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="{% static 'css/skins/skin-finance.css' %}">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+		<!-- Head Libs -->
+		<script src="{% static 'vendor/modernizr/modernizr.min.js' %}"></script>
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42715764-11"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-42715764-11');
+		</script>
+
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 85}">
+				<div class="header-body border-0">
+					<div class="header-top header-top-sticky-remove-bottom-border">
+						<div class="container">
+							<div class="row align-items-center justify-content-between">
+								<div class="col-auto">
+									<p class="font-weight-semibold text-color-dark text-2-5 mb-0">Le client est et reste notre priorité !</p>
+								</div>
+								<div class="col-auto d-flex align-items-center">
+									
+									<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-dark border border-top-0 border-end-0 border-bottom-0 ps-3 ms-2 mb-0 d-none d-sm-block">
+										<li class="social-icons-facebook">
+											<a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+										</li>
+										<li class="social-icons-twitter">
+											<a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li class="social-icons-linkedin">
+											<a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header-container container" style="height: 115px;">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="{% url 'home' %}">
+											<h2 class="mt-4">Souza IMMO</h2>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-links">
+										<div class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li>
+														<a class="nav-link" href="{% url 'home' %}">
+															Acceuil
+														</a>
+													</li>
+													<li>
+														<a class="nav-link" href="{% url 'about' %}">
+															Qui sommes-nous ?
+														</a>
+													</li>
+													
+													<li>
+														<a class="nav-link" href="{% url 'maison' %}">
+															Parcourir
+														</a>
+													</li>
+													<li>
+														<a class="nav-link active" href="{% url 'contact' %}">
+															Contact
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+									<ul class="header-extra-info ms-5-5">
+										<li class="d-inline-flex ms-0">
+											<div class="header-extra-info-icon d-none d-sm-block">
+												<i class="icons icon-phone text-3 text-color-dark position-relative top-3"></i>
+											</div>
+											<div class="header-extra-info-text line-height-2">
+												<span class="text-1 font-weight-semibold text-color-default">Appelez-nous maintenant !</span>
+												<strong class="text-4"><a href="tel:+243844634938" class="text-color-hover-primary text-decoration-none">(243) 844 634 938</a></strong>
+											</div>
+										</li>
+									</ul>
+									<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<div role="main" class="main">
+
+				<section class="page-header page-header-modern page-header-background overlay overlay-show overlay-color-primary overlay-op-9 border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '125%', 'fadeIn': true}" data-image-src="img/demos/finance/backgrounds/background-2.jpg">
+					<div class="container position-relative z-index-2">
+						<div class="row text-center text-md-start">
+							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
+								<h1 class="font-weight-bold text-color-light text-10 mb-0">Contact</h1>
+							</div>
+							<div class="col-md-4 order-1 order-md-2 align-self-center">
+								<ul class="breadcrumb breadcrumb-light d-block text-md-end text-4 mb-0">
+									<li><a href="demo-finance.html" class="text-decoration-none">Home</a></li>
+									<li class="text-upeercase active">Contact</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section bg-dark border-0 m-0">
+					<div class="container py-5-5">
+						<div class="row align-items-center">
+							<div class="col-md-6 mb-5 mb-md-0">
+								<h3 class="font-weight-bold text-color-light line-height-1 text-4 ls-0 mb-1 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">Faites affaires avec des spécialistes !</h3>
+								<h2 class="text-color-light font-weight-bold text-8 ls-0 mb-3 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400">Parlons business </h2>
+								<p class="text-color-grey line-height-9 text-3-5 pe-md-4 pe-lg-5 mb-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Notre agence met a votre disposition tout une équipe de spécialiste pour vous aider dans vos soucis et bésoin immobilier en RDC et partout ailleurs . </p>
+								<a href="{% url 'about' %}" class="btn btn-light text-color-dark font-weight-bold positive-ls-3 btn-px-5 py-3 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="800">En savoir plus</a>
+							</div>
+							<div class="col-md-6 divider-left-border custom-mobile-remove-divider-left-border border-color-light-4">
+								<div class="ps-md-4 ps-lg-4 py-md-5 ms-md-4">
+									<div class="d-flex align-items-center appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="900">
+										<i class="icons icon-phone text-9 text-color-light position-relative bottom-1"></i>
+										<a href="tel:00243844634938" class="text-4-5 font-weight-bold text-color-light opacity-hover-8 text-decoration-none ps-3-5">(243) 844 634 938</a>
+									</div>
+									<div class="d-flex align-items-center my-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">
+										<img width="38" height="38" src="{% static 'img/demos/finance/icons/email.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+										<a href="mailto:juniormbuyi4000@gmail.com" class="text-4-5 font-weight-bold text-color-light opacity-hover-8 text-decoration-none ps-3-5"><span class="__cf_email__">souzy@gmail.com</span></a>
+									</div>
+									<div class="d-flex align-items-center pe-lg-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1300">
+										<img width="38" height="38" src="{% static 'img/demos/finance/icons/map-pin.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+										<p class="text-color-light font-weight-bold text-4-5 mb-0 ps-3-5 pe-lg-5 me-lg-5">8 Rue MALULA, Kinshasa, RDC</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section bg-primary border-0 m-0">
+					<div class="container py-5">
+						<div class="row">
+							<div class="col-md-7 col-lg-8">
+								<h3 class="font-weight-bold text-color-light line-height-1 text-4 ls-0 mb-1">Ecrivez-nous !</h3>
+								<h2 class="text-color-light font-weight-bold text-8 ls-0 mb-3">Laissez-noyus votre message et nous vous repondront</h2>
+								<p class="text-color-light opacity-7 font-weight-light text-3-5 line-height-9">Veillez remplir le formulaire ci-dessous en saisissant les information exact vous concernant</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								
+								<form class="contact-form form-style-4 form-style-4-border-light-2 form-errors-light pe-lg-5" action="contact.html" method="POST">{% csrf_token %}
+									<div class="contact-form-success alert alert-success d-none mt-4">
+										{% if full %}
+										<strong>Success!</strong> Your message has been sent to us.
+										{% endif %}
+									</div>
+									<div class="contact-form-error alert alert-danger d-none mt-4">
+										<strong>Error!</strong> Nous n'avons pas pu envoyer le message ! veillez réessayer.
+										<span class="mail-error-message text-1 mt-2 d-block"></span>
+									</div>
+									<div class="row mb-2 mx-0">
+										<input type="text" class="form-control font-weight-semibold text-color-light px-1 py-3" name="name" placeholder="* Nom complet" data-msg-required="This field is required." id="name" required="" />
+									</div>
+									<div class="row mx-0 mb-3">
+										<input type="email" class="form-control font-weight-semibold text-color-light px-1 py-3" name="email" placeholder="* Email Address" data-msg-required="This field is required." id="email" required="" />
+									</div>
+									<div class="row mb-4 mx-0">
+										<textarea name="message" id="message" rows="4" class="form-control form-control font-weight-semibold text-color-light px-1" placeholder="* Message"></textarea>
+									</div>
+									<input type="submit" class="btn btn-light text-color-dark font-weight-bold positive-ls-3 btn-px-5 py-3" value="Envoyer" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			</div>
+			<footer id="footer" class="footer-reveal bg-light border-0 m-0">
+				<div class="container py-5 mt-5">
+					<div class="row">
+						
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<h4 class="text-color-dark font-weight-bold mb-4-5">Navigation</h4>
+							<ul class="list list-unstyled columns-lg-2 text-3-5">
+								<li><a href="{% url 'home' %}">Acceuil</a></li>
+								<li><a href="{% url 'about' %}">A propos de nous</a></li>
+								<li><a href="demo-finance.html">Parcourir</a></li>
+								<li><a href="#">Stratégie</a></li>
+								<li><a href="#">Parténaire</a></li>
+								<li><a href="#">Sponsors</a></li>
+								
+							</ul>
+						</div>
+						<div class="col-lg-4 mb-4 mb-lg-0">
+							<h4 class="text-color-dark font-weight-bold mb-4-5">Policies</h4>
+							<ul class="list list-unstyled text-3-5">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms of Use</a></li>
+								<li><a href="#">FAQ's</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4">
+							<h4 class="text-color-dark font-weight-bold mb-4-5">Newsletter</h4>
+							<div class="alert alert-success d-none" id="newsletterSuccess">
+								<strong>Success!</strong> You've been added to our email list.
+							</div>
+							<div class="alert alert-danger d-none" id="newsletterError"></div>
+							<form id="newsletterForm" action="" method="POST" class="mw-100">
+								<div class="input-group">
+									<input class="form-control bg-color-light-scale-1 border-0 px-4 text-3" placeholder="Email Adress..." name="newsletterEmail" id="newsletterEmail" type="email">
+									<button class="btn btn-primary px-3" type="submit">
+										<img width="27" height="27" src="{% static 'img/demos/business-consulting-3/icons/arrow-right.svg' %}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright bg-light m-0 pt-3-5 pb-5">
+					<div class="container">
+						<div class="row align-items-center justify-content-between">
+							<div class="col-12 col-sm-auto text-center text-sm-start order-2 order-sm-1">
+								<p class="text-3">souzy agence © 2022. All Rights Reserved.</p>
+							</div>
+							<div class="col-12 col-sm-auto order-1 order-sm-2 mb-2 mb-sm-0">
+								<div class="d-flex align-items-center justify-content-center">
+									
+									<ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-medium border border-top-0 border-end-0 border-bottom-0 ps-3 ms-2 mb-0">
+										<li class="social-icons-facebook">
+											<a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+										</li>
+										<li class="social-icons-twitter">
+											<a href="https://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li class="social-icons-linkedin">
+											<a href="https://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+<!-- Vendor -->
+<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.appear/jquery.appear.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.validation/jquery.validate.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
+<script src="{% static 'vendor/jquery.gmap/jquery.gmap.min.js' %}"></script>
+<script src="{% static 'vendor/lazysizes/lazysizes.min.js' %}"></script>
+<script src="{% static 'vendor/isotope/jquery.isotope.min.js' %}"></script>
+<script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'vendor/vide/jquery.vide.min.js' %}"></script>
+<script src="{% static 'vendor/vivus/vivus.min.js' %}"></script>
+
+<!-- Theme Base, Components and Settings -->
+<script src="{% static 'js/theme.js' %}"></script>
+
+<!-- Current Page Vendor and Views -->
+<script src="{% static 'js/views/view.contact.js' %}"></script>
+
+<!-- Theme Initialization Files -->
+<script src="{% static 'js/theme.init.js' %}"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"70f101df5a6d06db","version":"2021.12.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from www.okler.net/previews/porto/9.6.0/demo-finance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 May 2022 23:36:34 GMT -->
+</html>

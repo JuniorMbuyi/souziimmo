@@ -1,0 +1,1 @@
+web: gunicorn souzy.wsgi --log-file -
